@@ -13,7 +13,7 @@ https://github.com/user-attachments/assets/c21263d2-ff6e-44d2-823d-7e3d811097ea
   Administrators have access to a full log of all prescriptions, enabling monitoring and analysis of drug recommendations over time. Each entry includes timestamps and patient details.
 
 - **Machine Learning Model:**  
-  The recommendation engine employs pre-trained **BERT embeddings** to capture the semantic meaning of patient symptoms. An XGBoost classifier then predicts the top `k` drug options, ensuring reliable and context-aware suggestions.
+  The recommendation engine employs pre-trained **BERT embeddings** to capture the semantic meaning of patient symptoms. An XGBoost classifier then predicts the top k drug options, ensuring reliable and context-aware suggestions.
 
 - **Automatic Email Notifications:**  
   Once a prescription is generated, the system’s agent automatically sends an email containing patient details (name, age, receipt ID, symptoms) and the recommended drugs. This ensures timely communication while keeping the workflow automated and agentic.
