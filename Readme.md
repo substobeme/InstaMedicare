@@ -1,5 +1,7 @@
 # InstaMediHelp
 
+https://github.com/user-attachments/assets/c21263d2-ff6e-44d2-823d-7e3d811097ea
+
 **InstaMediHelp** is an intelligent healthcare support system designed to provide drug recommendations based on patient-reported symptoms. The system leverages advanced machine learning techniques, including **BERT embeddings**, to interpret textual symptom descriptions and generate accurate suggestions. The platform combines a **Streamlit frontend** for intuitive user interaction with a **FastAPI backend** that processes requests, logs recommendations, and sends prescription summaries via email.
 
 ## Features
