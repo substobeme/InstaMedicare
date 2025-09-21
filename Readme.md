@@ -18,4 +18,4 @@ https://github.com/user-attachments/assets/c21263d2-ff6e-44d2-823d-7e3d811097ea
 - **Automatic Email Notifications:**  
   Once a prescription is generated, the system’s agent automatically sends an email containing patient details (name, age, receipt ID, symptoms) and the recommended drugs. This ensures timely communication while keeping the workflow automated and agentic.
 
--**Note :** Didn't upload Bert trained encoder and model as file too big(even zipped) 
+- **Note :** Didn't upload Bert trained encoder and model as file too big(even zipped) 
