@@ -24,18 +24,19 @@ def predict_drugs(review, top_k, model, le_drug, le_condition, bert_model, condi
     known_conditions = list(le_condition.classes_)
     condition_input = extract_condition_nn(review, known_conditions, condition_embeddings, bert_model)
     cond_enc = le_condition.transform([condition_input])[0]
+
     review_emb = bert_model.encode([review])
-    
     user_rating = 10
     count_reviews = 1
     numeric_feats = np.array([[user_rating, count_reviews, cond_enc]])
-    
+
     X_input = np.hstack([review_emb, numeric_feats])
     probs = model.predict_proba(X_input)[0]
-    
+
     top_idx = np.argsort(probs)[::-1][:top_k]
     top_drugs = le_drug.inverse_transform(top_idx)
     top_probs = probs[top_idx].tolist()
     predictions = list(zip(top_drugs, top_probs))
-    
+
     return predictions, condition_input
+
