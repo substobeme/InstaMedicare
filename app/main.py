@@ -40,7 +40,7 @@ def log_recommendation(name, age, email, problem, drugs):
         (name, age, email, problem, ", ".join(drugs))
     )
     conn.commit()
-    return c.lastrowid  # return auto-generated rec_id
+    return c.lastrowid  
 
 @app.post("/recommend/")
 def recommend(request: PredictRequest):
