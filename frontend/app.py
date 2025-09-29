@@ -36,7 +36,7 @@ if st.session_state.logged_in:
                 name = st.text_input("Name")
                 age = st.number_input("Age", min_value=0, max_value=120, step=1)
             with col2:
-                top_k = st.number_input("Number of drug recommendations", min_value=1, max_value=5, value=3, step=1)
+                top_k = st.number_input("Number of drug recommendations", min_value=3, max_value=5, value=3, step=1)
                 email = st.text_input("Email")
             review_input = st.text_area("Describe your symptoms or condition")
             submit_btn = st.form_submit_button("Get Recommendations")
