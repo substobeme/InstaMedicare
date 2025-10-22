@@ -34,7 +34,7 @@ if st.session_state.logged_in:
             col1, col2 = st.columns(2)
             with col1:
                 name = st.text_input("Name")
-                age = st.number_input("Age", min_value=0, max_value=120, step=1)
+                age = st.number_input("Age", min_value=0, max_value=100, step=1)
             with col2:
                 top_k = st.number_input("Number of drug recommendations", min_value=3, max_value=5, value=3, step=1)
                 email = st.text_input("Email")
